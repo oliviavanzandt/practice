@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Olivia Van Zandt">
+    <meta name="description" content="Happy Day Dessert Factory Website">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"> </script>
+    <script src="js/scripts.js" type="text/javascript"> </script>
+    <title>Happy Day Dessert Factory Menu Page</title>
+
+</head>
+
+
+
+<body>
+    <header>
+       <h1>Happy Day Dessert Factory</h1>
+    </header>
+
+    <!--toggle method found via https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show-->
+    <div id="menu">
+        <h2>Menu</h2>
+        <button onclick="myFunction()">Ice Cream</button>
+    </div>
+
+    
+    <div id="icecream">
+    <p>Triple Chocolate Mousse</p>
+    <img src="images/chocolate.png" alt="Triple Chocolate Mousse Ice Cream"><br>
+    <p>Cherry Vanilla</p>
+    <img src="images/cherryvanilla.png" alt="Cherry Vanilla Ice Cream"><br>
+    <p>Birthday Cake</p> 
+    <img src="images/birthdaycake.png" alt="Birthday Cake Ice Cream"><br>
+    <p>Apple Pie</p>
+    <img src="images/applepie.png" alt="Apple Pie Ice Cream"><br>
+    <p>Chocolate Reese's Peanut Butter Cup</p>
+    <img src="images/reeses.png" alt="Chocolate Reese's Peanut Butter Cup Ice Cream"><br>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("icecream");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+    </script>
+
+
+    <div id="logo-hours">
+        <img src="images/logo.jpg" alt="Happy Day Logo">
+    </div>
+
+    <div id="content">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="our-story.html">Our Story</a> |
+            <a href="mailing-list.html">Mailing List</a> |
+            <a href="hours-location.html">Hours and Location</a>
+        </nav>
+    </div>
+
+    <footer>
+    <hr>
+    <h3>Happy Day Dessert Factory</h3>
+    <p>906A Western Ave, Pittsburgh, PA 15233</p>
+    <p>Any questions? Email: </p>
+    <a href="mailto:info@happydaydessertfactory.com"
+    target="_blank">info@happydaydessertfactory.com</a><br>
+    <p>Call:</p>
+    <p>412-872-0117</p>
+    &copy; Happy Day Dessert Factory
+    
+    </footer>
+
+</body>
+</html>

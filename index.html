@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Olivia Van Zandt">
+    <meta name="description" content="Happy Day Dessert Factory Website">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"> </script>
+    <script src="js/scripts.js" type="text/javascript"> </script>
+    <title>Happy Day Dessert Factory Home Page</title>
+</head>
+
+<body>
+    <header>
+       <h1>Happy Day Dessert Factory</h1>
+    </header>
+
+    <div id="info">
+      <a href="mailto:info@happydaydessertfactory.com"
+      target="_blank">info@happydaydessertfactory.com</a><br>
+      <p>412-872-0117</p>
+
+    </div>
+
+    <div id="logo">
+        <img src="images/logo.jpg" alt="Happy Day Logo">
+    </div>
+
+    <div id="promotiontxt">Scroll below to see our current promotions</div>
+
+    <div id="socials">
+        <h2>Check our socials and video!</h2>
+            <a href="https://www.facebook.com/happydaydessertfactory/" target="_blank">
+              <img src="images/facebook.png" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com/happydaydessertfactory/?hl=en" target="_blank">
+              <img src="images/instagram.png" alt="Instagram Icon"></a>
+            <a href="https://www.yelp.com/biz/happy-day-dessert-factory-pittsburgh " target="_blank">
+              <img src="images/yelp.png" alt="Yelp Icon"></a>
+            <a href="https://www.youtube.com/watch?v=F3__YFGOyZ4" target="_blank">
+                <img src="images/youtube.png" alt="YouTube Icon"></a>
+    </div>
+
+    <div id="content">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="our-story.html">Our Story</a> |
+            <a href="mailing-list.html">Mailing List</a> |
+            <a href="hours-location.html">Hours and Location</a>
+        </nav>
+    </div>
+
+   <!--code via https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/founder.jpeg" style="width:100%" alt="Founder scooping ice cream">
+      <div class="text">Photo courtesy of Jared Wickerham via: https://www.pghcitypaper.com/food-drink/pittsburgh-restaurants-defy-odds-by-opening-during-pandemic-17004914</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/location.jpeg" style="width:100%" alt="outside of Happy Day Dessert Factory">
+      <div class="text">Photo courtesy of Hallie Lauer via: https://www.thenorthsidechronicle.com/2020/03/26/northside-ice-cream-shop-opens-amidst-global-pandemic/</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/inside.webp" style="width:100%" alt="inside of Happy Day Dessert Factory">
+      <div class="text">Photo courtesy of Arlene M. via: https://www.yelp.com/biz_photos/happy-day-dessert-factory-pittsburgh?select=-S4HHE7DHvA4D8YGRxthww</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/products.png" style="width:100%" alt="products of Happy Day Dessert Factory">
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+<!--code via https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+
+    <br>
+    <br>
+    <div id="promotion">
+        <table>
+            <tr>
+                <th colspan="2">Current Promotions</th>
+            </tr>
+            <tr>
+                <td>Sundae Sunday</td>
+                <td>Free sundae with any purchase</td>
+            </tr>
+            <tr>
+                <td>Milk and Cookies Monday</td>
+                <td>Buy a milkshake and get a free cokie</td>
+            </tr>
+            <tr>
+                <td>Water Ice Wednesday</td>
+                <td>Half off any water ice</td>
+            </tr>
+
+        </table>
+        <br><br>
+
+    </div>
+
+
+    <footer>
+      <hr>
+      <h3>Happy Day Dessert Factory</h3>
+      <p>906A Western Ave, Pittsburgh, PA 15233</p>
+      <p>Any questions? Email: </p>
+      <a href="mailto:info@happydaydessertfactory.com"
+      target="_blank">info@happydaydessertfactory.com</a><br>
+      <p>Call:</p>
+      <p>412-872-0117</p>
+      &copy; Happy Day Dessert Factory
+
+      </footer>
+
+</body>
+</html>
