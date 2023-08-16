@@ -1,0 +1,380 @@
+h1 {
+    font-family: "Helvetica", Helvetica,  Sans-serif;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+    color: #003459;
+    position: absolute;
+    padding-top: 75px;
+    padding-left: 100px;
+    width: 1000px; 
+}
+
+
+#logo-story {
+    position: absolute;
+    top: 8px;
+}
+
+#content {
+    font-family: "Open Sans", Helvetica, Sans-serif;
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: right;
+    color: #003459;
+    position: absolute;
+    padding-right: 10px;
+    top: 0; 
+    right: 0; 
+    width: 1500px; 
+}
+
+/*for the navigation to change colors */
+a {
+  color: #003459;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66afe0;
+  text-decoration: underline;
+}
+
+
+#header {
+    text-align: right;
+}
+
+#info {
+  position: absolute;
+  padding-left: 275px;
+  padding-top: 190px;
+  font-family: "Helvetica", Helvetica,  Sans-serif;
+  font-size: 110%;
+}
+
+#footer hr, h3 {
+    font-family: "Open Sans", Helvetica, Sans-serif;
+    color: #800020;
+}
+
+#socials {
+    font-family: "Helvetica", Helvetica,  Sans-serif;
+    color: #00171F;
+    padding-left: 1150px;
+    
+}
+
+#promotiontxt {
+    font-family: "Helvetica", Helvetica,  Sans-serif;
+    color: #800020;
+    font-size: 150%;
+    font-weight: bold;
+    padding-left: 500px;
+    padding-top: 80px;
+    position: absolute;
+    text-align: center;
+    
+}
+
+#mailing-list h2 {
+    font-family: "Open Sans", Helvetica, Sans-serif;
+    font-size: 2em; 
+    color: #D49100;
+}
+
+#mailing-list {
+    font-family: "Open Sans", Helvetica, Sans-serif;
+    font-size: 1.25em; 
+}
+
+
+/*for the mailing list border box*/
+#container {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+/*on the our story page */
+/*got via https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_display_grid */
+#grid-container h2 {
+    font-family: "Helvetica", Helvetica,  Sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    color: #003459;
+    position: absolute;
+    padding-top: 175px;
+    padding-left: 290px;
+    width: 1000px; 
+
+}
+
+.grid-container {
+    display: grid;
+  }
+
+  
+/* figured out via https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-auto-rows */
+.item1 {
+    font-family: "Open Sans", Helvetica,  Sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #D49100;
+    font-weight: bold;
+    padding-top: 300px;
+    line-height: 0.01;
+    margin: 0; 
+}
+
+.item2 {
+    font-family: "Open Sans", Helvetica,  Sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #D49100;
+    font-weight: bold;
+    line-height: 0.01;
+    margin: 10px; 
+}
+
+.item3 {
+    font-family: "Open Sans", Helvetica,  Sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #D49100;
+    font-weight: bold;
+    line-height: 0.01;
+    margin: 10px; 
+}
+
+.item4 {
+    font-family: "Open Sans", Helvetica,  Sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #D49100;
+    font-weight: bold;
+    line-height: 0.01;
+    margin: 10px; 
+}
+
+
+.grid-info {
+    font-family: "Helvetica", Helvetica,  Sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    color: #00171F;
+}
+
+.grid-pic {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* all code from https://www.w3schools.com/howto/howto_js_slideshow.asp (until line 245)*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color:#00171F;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* the promotions table */
+table {
+    width: 75%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #800020;
+    border-spacing: 3px;
+    margin: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+    font-size: 150%;
+}
+
+th {
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+th, td {
+    padding: 2px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #800020;
+}
+
+#location-map {
+  position: relative;
+  padding-top: 200px;
+  padding-left: 200px;
+}
+
+#location-map h2 {
+  font-family: "Helvetica", Helvetica,  Sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  color: #003459;
+  position: relative;
+  padding-left: 80px;
+  bottom: 35px;
+  width: 1000px; 
+  float: left;
+
+}
+
+/* so the logo stays in the top left */
+#logo-hours {
+  position: absolute;
+  top: 8px;
+}
+
+.hour {
+  font-family: "Open Sans", Helvetica,  Sans-serif;
+  font-size: 30px;
+  text-align: left;
+  color: #D49100;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-left: 410px;
+  line-height: 0.01;
+
+}
+
+.hours-info {
+  font-family: "Helvetica", Helvetica,  Sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 300px;
+  margin-right: auto;
+  width: 30em;
+  color: #00171F;
+  line-height: 0.01;
+}
+
+/*toggle method found via https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show */
+#icecream {
+  width: 50%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #D49100;
+  margin-bottom: 75px;
+  margin-left: 340px;
+  margin-top: 10px;
+}
+
+#icecream p {
+  font-family: "Open Sans", Helvetica,  Sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#menu button {
+  font-family: "Open Sans", Helvetica,  Sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color:#800020;
+  height: 30px;
+  width: 150px;
+  margin-left: 650px;
+  margin-top: 300px;
+}
+
+#menu h2 {
+  font-family: "Helvetica", Helvetica,  Sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  color: #003459;
+  position: absolute;
+  padding-top: 175px;
+  padding-left: 290px;
+  width: 1000px; 
+}
